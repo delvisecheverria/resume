@@ -138,16 +138,25 @@ a {
 
 .eyebrow,
 .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 30px;
   margin: 0 0 18px;
-  color: #6e6e73;
+  padding: 6px 10px;
+  border: 1px solid rgba(8, 8, 8, 0.12);
+  color: var(--charcoal);
+  background: var(--accent);
   font-size: 0.78rem;
-  font-weight: 750;
+  font-weight: 850;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .hero .eyebrow {
-  color: var(--accent);
+  border-color: transparent;
+  color: var(--charcoal);
+  background: var(--accent);
 }
 
 h1,
@@ -369,11 +378,11 @@ h3 {
   align-items: center;
   min-height: 40px;
   padding: 8px 15px;
-  border: 1px solid #dfdfe5;
-  border-radius: 999px;
-  color: var(--ink-soft);
-  background: #fff;
-  font-weight: 700;
+  border: 1px solid rgba(8, 8, 8, 0.12);
+  border-radius: 0;
+  color: var(--charcoal);
+  background: rgba(215, 255, 95, 0.38);
+  font-weight: 800;
 }
 
 .expertise-grid {
@@ -448,10 +457,18 @@ h3 {
 
 .role-meta,
 .date {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 28px;
   margin-bottom: 14px;
-  color: #86868b;
-  font-size: 0.86rem;
-  font-weight: 750;
+  padding: 5px 9px;
+  border: 1px solid rgba(8, 8, 8, 0.12);
+  color: var(--charcoal);
+  background: rgba(215, 255, 95, 0.36);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.02em;
 }
 
 .role-title {
@@ -479,14 +496,18 @@ h3 {
 
 .tag {
   display: inline-flex;
+  align-items: center;
   margin-bottom: 18px;
-  padding: 6px 11px;
-  border: 1px solid #dfdfe5;
+  min-height: 28px;
+  padding: 5px 10px;
+  border: 1px solid rgba(8, 8, 8, 0.12);
   border-radius: 0;
-  color: #6e6e73;
-  background: #f8f8fa;
+  color: var(--charcoal);
+  background: var(--accent);
   font-size: 0.76rem;
-  font-weight: 800;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .feature-grid {
@@ -539,6 +560,10 @@ h3 {
 .contact-section .section-kicker,
 .contact-section p {
   color: rgba(255, 255, 255, 0.72);
+}
+
+.contact-section .section-kicker {
+  color: var(--charcoal);
 }
 
 .contact-section h2 {
